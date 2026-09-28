@@ -1,130 +1,97 @@
-🍔 QuickBite — Food Delivery App
+# 🍔 QuickBite — Food Delivery App
 
-A modern full-stack food delivery mobile application built with React Native (Expo) and a backend powered by Sanity CMS.
+A modern full-stack food delivery mobile application built with **React Native (Expo)** and a backend powered by **Sanity CMS**.
 
 QuickBite allows users to discover restaurants, browse food categories, add dishes to their cart, manage orders, and follow the delivery process through a clean and intuitive mobile interface.
 
-🚧 This project is a portfolio/demo application and is not currently published on the Google Play Store or Apple App Store.
+> 🚧 **Note:** This project is a portfolio/demo application and is not currently published on the Google Play Store or Apple App Store.
 
-✨ Features
+---
 
-🏠 Home & Restaurant Discovery
+## ✨ Features
 
-Browse featured restaurants and food categories
+### 🏠 Home & Restaurant Discovery
+* Browse featured restaurants and food categories
+* View popular and recommended dishes
 
-View popular and recommended dishes
+### 🍔 Restaurant & Menu Browsing
+* Explore full restaurant menus
+* View dish details, prices, images, and descriptions
 
-🍔 Restaurant & Menu Browsing
+### 🛒 Shopping Cart
+* Add and remove food items
+* Increase or decrease item quantities
+* Automatically calculate subtotal and delivery fees
 
-Explore restaurant menus
+### 📦 Order Management
+* Review order details
+* View order status
+* Display delivery information
 
-View dish details, prices, images, and descriptions
+### 🚴 Delivery Tracking UI
+* Show delivery progress in real time
+* Display rider information
+* Show estimated delivery time
 
-🛒 Shopping Cart
+### 🌙 Theme Support
+* Global theme state management using **React Context**
 
-Add and remove food items
+### 🌍 Localization-ready UI
+* Prices displayed natively in **ETB (Ethiopian Birr)**
+* Designed with mobile-first layouts and reusable components
 
-Increase or decrease item quantities
+### ⚡ Dynamic Content
+* Restaurant and food data managed dynamically through **Sanity CMS**
+* High-performance image delivery powered by **Sanity Image API**
 
-Automatically calculate subtotal and delivery fees
+---
 
-📦 Order Management
+## 🛠️ Tech Stack
 
-Review order details
+### **Mobile App**
+* **Framework:** React Native (Expo)
+* **Language:** JavaScript
+* **Styling:** NativeWind / Tailwind CSS
+* **Navigation:** React Navigation
+* **State Management:** Redux Toolkit & React Context API
+* **Icons:** React Native Feather Icons
 
-View order status
+### **Backend & Content Management**
+* **CMS:** Sanity CMS
+* **Assets:** Sanity Image URL API
 
-Display delivery information
+---
 
-🚴 Delivery Tracking UI
+## 🔄 App User Flow
 
-Show delivery progress
+```text
+Home  ──>  Restaurant  ──>  Food Selection  ──>  Cart  ──>  Checkout  ──>  Order  ──>  Delivery Tracking
+## 📂 Project Structure
 
-Display rider information
-
-Show estimated delivery time
-
-🌙 Theme Support
-
-Theme state is managed globally using React Context
-
-🌍 Localization-ready UI
-
-Prices displayed using ETB (Ethiopian Birr)
-
-Designed with mobile-first layouts and reusable components
-
-⚡ Dynamic Content
-
-Restaurant and food data are managed through Sanity CMS
-
-Images are delivered through Sanity's image API
-
-🛠️ Tech Stack
-Mobile App
-
-React Native
-
-Expo
-
-JavaScript
-
-NativeWind / Tailwind CSS
-
-React Navigation
-
-Redux Toolkit
-
-React Context API
-
-React Native Feather Icons
-
-Backend / Content
-
-Sanity CMS
-
-Sanity Image URL
-
-
-The demo shows the main user flow:
-
-Home
-  ↓
-Restaurant
-  ↓
-Food Selection
-  ↓
-Cart
-  ↓
-Checkout
-  ↓
-Order
-  ↓
-Delivery Tracking
-
-📂 Project Structure
-food-delivery-app/
+```text
+QuickBite-Food-Delivery-App/
+├── Food_Delivery/              # React Native (Expo) Mobile Client
+│   ├── assets/                 # App icons, splash screens, and local images
+│   ├── components/             # Reusable UI elements (DishRow, BasketIcon, Categories)
+│   ├── context/                # Theme and global UI state context providers
+│   ├── navigation/             # React Navigation stack & tab configurations
+│   ├── screens/                # Screen views (HomeScreen, RestaurantScreen, CartScreen, OrderPreparingScreen)
+│   ├── slices/                 # Redux Toolkit state slices (basketSlice, restaurantSlice)
+│   ├── sanity/                 # Sanity client config & GROQ query utilities
+│   ├── store.js                # Centralized Redux store setup
+│   ├── App.js                  # Main application entry point & context providers
+│   └── package.json            # Mobile dependencies & Expo run scripts
 │
-├── Food_Delivery/                    # React Native mobile application
-│   │
-│   ├── assets/                # Images and static assets
-│   ├── components/            # Reusable UI components
-│   ├── context/               # React Context providers
-│   ├── navigation/            # Navigation configuration
-│   ├── screens/               # Application screens
-│   ├── slices/                # Redux Toolkit slices
-│   ├── sanity/                # Sanity configuration
-│   ├── store.js               # Redux store
-│   ├── App.js                 # Application entry point
-│   └── package.json
+├── sanity/                     # Backend / Sanity CMS Studio
+│   └── delivery-app/           # Sanity project directory
+│       ├── schemaTypes/        # Sanity schemas (restaurant, category, dish, featured)
+│       ├── static/             # Studio assets & branding icons
+│       ├── sanity.config.js    # Sanity Studio core setup & plugin configuration
+│       └── package.json        # Studio dependencies & deployment scripts
 │
-├── sanity/delivery-app                    # Backend / Sanity project
-│   ├── schemaTypes/           # Sanity schemas
-│   ├── static/                # Static files
-│   └── package.json
-│
-├── .gitignore
-└── README.md
+├── .gitignore                  # Git tracking rules
+└── README.md                   # Repository documentation
+```
 
 🔐 Environment Variables
 
@@ -132,72 +99,43 @@ The application may require environment variables for services such as Sanity.
 
 
 🧠 What I Learned
+Building this project provided hands-on experience in full-stack mobile development:
 
-This project helped me practice and demonstrate:
+Mobile Development: Building cross-platform interfaces with React Native and Expo.
 
-Building mobile applications with React Native
+State Management: Efficiently handling complex UI states using Redux Toolkit and Context API.
 
-Managing application state with Redux Toolkit
+Headless CMS Integration: Connecting React Native with Sanity CMS for real-time dynamic content delivery.
 
-Creating reusable React Native components
+Cart Logic: Designing stateful cart calculations for price totals, item counts, and delivery fees.
 
-Implementing navigation between multiple screens
-
-Managing global application state with React Context
-
-Working with a headless CMS
-
-Fetching and displaying dynamic data
-
-Handling shopping cart logic
-
-Designing responsive mobile interfaces
-
-Structuring a full-stack project
-
-Managing environment variables and Git repositories
+Repository Architecture: Managing a full-stack project within a clean repository structure.
 
 🔮 Future Improvements
+[ ] User Authentication: Sign up/login with Email or Firebase.
 
-Possible future improvements include:
+[ ] Online Payments: Integration with localized payment gateways (Chapa, Telebirr).
 
-User authentication
+[ ] Real-Time GPS Tracking: Live map location tracking for delivery drivers.
 
-Online payment integration
+[ ] Push Notifications: Instant order status updates.
 
-Real-time GPS delivery tracking
+[ ] Reviews & Ratings: User feedback system for food and restaurants.
 
-Push notifications
+[ ] Driver Application: Dedicated mobile interface for delivery drivers.
 
-Restaurant and food reviews
-
-Favorite restaurants and dishes
-
-Order history
-
-User profile management
-
-Dedicated delivery driver application
-
-Production Android/iOS builds
-
-Contributing
-
-This project was created primarily as a portfolio project, but suggestions and improvements are welcome.
-
-If you find an issue or have an idea, feel free to open an issue or submit a pull request.
-
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page or submit a pull request.
 
 👨‍💻 Author
+Natinael Asfaw
 
-NATINAEL ASFAW
+Full-Stack Developer
 
-Full-stack Developer
+🌐 Portfolio: natnaelasfawportfolio.netlify.app
 
-GitHub: https://github.com/natinaelthedeveloper
+🐙 GitHub: @natinaelthedeveloper
 
-Portfolio: [https://natnaelasfawportfolio.netlify.app]
+💼 LinkedIn: Natinael Asfaw
 
-LinkedIn: [https://www.linkedin.com/in/natinael-asfaw-aa6116414]
-
-⭐ If you find this project interesting, consider giving the repository a star!
+⭐️ If you find this project helpful or interesting, please give it a star on GitHub!
