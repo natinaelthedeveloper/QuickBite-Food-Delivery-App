@@ -63,10 +63,12 @@ QuickBite allows users to discover restaurants, browse food categories, add dish
 ---
 
 ## 🔄 App User Flow
+```
 
 Home  ──>  Restaurant  ──>  Food Selection  ──>  Cart  ──>  Checkout  ──>  Order  ──>  Delivery Tracking
-
+```
 ## 📂 Project Structure
+```text
 QuickBite-Food-Delivery-App/
 ├── Food_Delivery/              # React Native (Expo) Mobile Client
 │   ├── assets/                 # App icons, splash screens, and local images
@@ -89,6 +91,7 @@ QuickBite-Food-Delivery-App/
 │
 ├── .gitignore                  # Git tracking rules
 └── README.md                   # Repository documentation
+```
 
 
 ## 🔐 Environment Variables
@@ -97,43 +100,37 @@ The application may require environment variables for services such as Sanity.
 
 
 ## 🧠 What I Learned
-### Building this project provided hands-on experience in full-stack mobile development:
-
-### Mobile Development: Building cross-platform interfaces with React Native and Expo.
-
-### State Management: Efficiently handling complex UI states using Redux Toolkit and Context API.
-
-### Headless CMS Integration: Connecting React Native with Sanity CMS for real-time dynamic content delivery.
-
-### Cart Logic: Designing stateful cart calculations for price totals, item counts, and delivery fees.
-
-### Repository Architecture: Managing a full-stack project within a clean repository structure.
+* Building this project provided hands-on experience in full-stack mobile development:
+* Mobile Development: Building cross-platform interfaces with React Native and Expo.
+* State Management: Efficiently handling complex UI states using Redux Toolkit and Context API.
+* Headless CMS Integration: Connecting React Native with Sanity CMS for real-time dynamic content delivery.
+* Cart Logic: Designing stateful cart calculations for price totals, item counts, and delivery fees.
+* Repository Architecture: Managing a full-stack project within a clean repository structure.
 
 ## 🔮 Future Improvements
-[ ] User Authentication: Sign up/login with Email or Firebase.
-
-[ ] Online Payments: Integration with localized payment gateways (Chapa, Telebirr).
-
-[ ] Real-Time GPS Tracking: Live map location tracking for delivery drivers.
-
-[ ] Push Notifications: Instant order status updates.
-
-[ ] Reviews & Ratings: User feedback system for food and restaurants.
-
-[ ] Driver Application: Dedicated mobile interface for delivery drivers.
+* User Authentication: Sign up/login with Email or Firebase.
+* Online Payments: Integration with localized payment gateways (Chapa, Telebirr).
+* Real-Time GPS Tracking: Live map location tracking for delivery drivers.
+* Push Notifications: Instant order status updates.
+* Reviews & Ratings: User feedback system for food and restaurants.
+* Driver Application: Dedicated mobile interface for delivery drivers.
 
 ## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page or submit a pull request.
+ Contributions, issues, and feature requests are welcome! Feel free to check the issues page or submit a pull request.
+
+---
 
 ## 👨‍💻 Author
-Natinael Asfaw
 
-### Full-Stack Developer
+**Natinael Asfaw**  
+*Full-Stack Developer*
 
-## 🌐 Portfolio: natnaelasfawportfolio.netlify.app
+Building scalable web and mobile applications with React Native, modern JavaScript frameworks, and headless backends.
 
-🐙 GitHub: @natinaelthedeveloper
+* 🌐 **Portfolio:** [see more about our service](https://natnaelasfawportfolio.netlify.app)
+* 🐙 **GitHub:** [@natinaelthedeveloper](https://github.com/natinaelthedeveloper)
+* 💼 **LinkedIn:** [Natinael Asfaw](https://www.linkedin.com/in/natinael-asfaw-aa6116414)
 
-💼 LinkedIn: Natinael Asfaw
+---
 
-⭐️ If you find this project helpful or interesting, please give it a star on GitHub!
+⭐️ **Enjoying this project?** If you find this repository helpful, consider giving it a star!
