@@ -64,11 +64,9 @@ QuickBite allows users to discover restaurants, browse food categories, add dish
 
 ## 🔄 App User Flow
 
-```text
 Home  ──>  Restaurant  ──>  Food Selection  ──>  Cart  ──>  Checkout  ──>  Order  ──>  Delivery Tracking
-## 📂 Project Structure
 
-```text
+## 📂 Project Structure
 QuickBite-Food-Delivery-App/
 ├── Food_Delivery/              # React Native (Expo) Mobile Client
 │   ├── assets/                 # App icons, splash screens, and local images
@@ -91,27 +89,27 @@ QuickBite-Food-Delivery-App/
 │
 ├── .gitignore                  # Git tracking rules
 └── README.md                   # Repository documentation
-```
 
-🔐 Environment Variables
+
+## 🔐 Environment Variables
 
 The application may require environment variables for services such as Sanity.
 
 
-🧠 What I Learned
-Building this project provided hands-on experience in full-stack mobile development:
+## 🧠 What I Learned
+### Building this project provided hands-on experience in full-stack mobile development:
 
-Mobile Development: Building cross-platform interfaces with React Native and Expo.
+### Mobile Development: Building cross-platform interfaces with React Native and Expo.
 
-State Management: Efficiently handling complex UI states using Redux Toolkit and Context API.
+### State Management: Efficiently handling complex UI states using Redux Toolkit and Context API.
 
-Headless CMS Integration: Connecting React Native with Sanity CMS for real-time dynamic content delivery.
+### Headless CMS Integration: Connecting React Native with Sanity CMS for real-time dynamic content delivery.
 
-Cart Logic: Designing stateful cart calculations for price totals, item counts, and delivery fees.
+### Cart Logic: Designing stateful cart calculations for price totals, item counts, and delivery fees.
 
-Repository Architecture: Managing a full-stack project within a clean repository structure.
+### Repository Architecture: Managing a full-stack project within a clean repository structure.
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 [ ] User Authentication: Sign up/login with Email or Firebase.
 
 [ ] Online Payments: Integration with localized payment gateways (Chapa, Telebirr).
@@ -124,15 +122,15 @@ Repository Architecture: Managing a full-stack project within a clean repository
 
 [ ] Driver Application: Dedicated mobile interface for delivery drivers.
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page or submit a pull request.
 
-👨‍💻 Author
+## 👨‍💻 Author
 Natinael Asfaw
 
-Full-Stack Developer
+### Full-Stack Developer
 
-🌐 Portfolio: natnaelasfawportfolio.netlify.app
+## 🌐 Portfolio: natnaelasfawportfolio.netlify.app
 
 🐙 GitHub: @natinaelthedeveloper
 
